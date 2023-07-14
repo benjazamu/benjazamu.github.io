@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kiosco El Sucucho</title>
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <link rel="shortcut icon" href="./imagenes/store-solid-24.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
     <meta name="theme-color" content="#2091f9">
 
 <meta name="title" content="Kiosco El Sucucho" />
@@ -39,16 +39,16 @@
             </div>
             <ul class="nav-link nav-link-menu">
                 <li class="nav-items">
-                    <a href="#" class="nav-links">Inicio</a>
+                    <a href="../index.html" class="nav-links">Inicio</a>
                 </li>
                 <li class="nav-items">
-                    <a href="#" class="nav-links">Acerca de</a>
+                    <a href="./acerca-de.html" class="nav-links">Acerca de</a>
                 </li>
                 <li class="nav-items">
-                    <a href="#" class="nav-links">Contacto</a>
+                    <a href="./contacto.html" class="nav-links">Contacto</a>
                 </li>
                 <li class="nav-items">
-                    <a href="#" class="nav-links">Galeria</a>
+                    <a href="./galeria.html" class="nav-links">Galeria</a>
                 </li>
                 <li class="nav-items">
                     <img src="./imagenes/close.svg" class="nav-close">
@@ -65,22 +65,105 @@
         </section>
     </header>
 
+    <main class="contacto-main">
+        <section class="main__ubicacion">
+            <div class="contenedor">
+                <h3 class="contenedor__titulo">Ubicacion Sucucho</h3>
+                <div class="direccion">
+                    <p class="direccion__domicilio">Av Cazadores Correntinos 5058<br>Corrientes, Arg 3400</p>
+                    <p class="direccion__telefono">(379)-405-9990</p>
+                    <p class="direccion__correo">Elsucucho-despensa@hotmail.com</p>
+                </div>
+            </div>
+
+            <div class="horarios">
+                <h4 class="horarios__titulo">Horarios</h4>
+                <p class="horarios__entreSemana">Lunes a Viernes <br> 9:00am - 23:00pm</p>
+                <p class="horarios__finDeSemana">Sabados y Domingos <br> 11:00am - 23:00pm</p>
+            </div>
+        </section>
+
+        <section class="mapa">
+            <iframe
+                src="https://www.google.com/maps/place/Av.+Regimiento+Cazadores+Correntinos+5058,+Corrientes,+Argentina/@-27.4888069,-58.7915042,3a,75y,108.02h,90t/data=!3m7!1e1!3m5!1sY0dY71Gl75AzgE053QDeyw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DY0dY71Gl75AzgE053QDeyw%26cb_client%3Dsearch.gws-prod.gps%26w%3D86%26h%3D86%26yaw%3D108.020424%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192!4m9!1m2!7m1!2e1!3m5!1s0x94456baec61b0543:0x75aa07ade2adeffb!8m2!3d-27.4887445!4d-58.7914502!10e5?entry=ttu"
+                width="1600" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <h3 class="contacto">Contacto Sucucho</h3>
+
+        <form class="formulario">
+            <fieldset class="contenedorFormulario">
+                <legend>Hace tu pedido aca:</legend>
+                <br>
+                <label for="nombre">Nombre:</label>
+                <br>
+                <input type="text" class="nombre" required>
+                <br>
+                <label for="correo">Correo:</label>
+                <br>
+                <input type="email" class="correo" required>
+                <br>
+                <label for="telefono">Telefono:</label>
+                <br>
+                <input type="text" class="telefono" required>
+                <br>
+                <label for="direccion">Direccion:</label>
+                <br>
+                <input type="text" class="direccion" required>
+                <br><br>
+                <label for="horario">Hora de Entrega</label>
+                <select name="horario" class="horario" required>
+                    <option value="hora">12:00 pm</option>
+                    <option value="hora">13:00 pm</option>
+                    <option value="hora">14:00 pm</option>
+                    <option value="hora">15:00 pm</option>
+                    <option value="hora">16:00 pm</option>
+                    <option value="hora">17:00 pm</option>
+                    <option value="hora">18:00 pm</option>
+                    <option value="hora">19:00 pm</option>
+                    <option value="hora">20:00 pm</option>
+                    <option value="hora">21:00 pm</option>
+                    <option value="hora">22:00 pm</option>
+                    <option value="hora">23:00 pm</option>
+                </select>
+                <br><br>
+                <label for="fecha">Dia de entrega</label>
+                <br>
+                <input type="date" class="fecha" required>
+                <br><br>
+                <label for="descripcion">Describe tu pedido:</label>
+                <br>
+                <textarea name="descripcion" class="descripcion"></textarea>
+                <br>
+                <label for="informacion">¿Quiere recibir informacion sobre nuestras promociones?</label>
+                <br>
+                <input type="checkbox" value="Registrate" class="footer-submit">SI
+                <input type="checkbox" value="Registrate" class="footer-submit">NO
+                <br><br>
+
+                <input type="reset" value="Reiniciar" class="reseteo">
+                <input type="submit" value="Enviar" class="enviar">
+            </fieldset>
+        </form>
+
+    </section>
+</main>
     <footer class="footer">
         <section class="footer-container container">
             <nav class="nav nav-footer">
                 <h2 class="footer-titulo">Kiosco El Sucucho</h2>
                 <ul class="nav-link nav-link__footer">
                     <li class="nav-items">
-                        <a href="#" class="nav-links">Inicio</a>
+                        <a href="../index.html" class="nav-links">Inicio</a>
                     </li>
                     <li class="nav-items">
-                        <a href="#" class="nav-links">Acerca de</a>
+                        <a href="./acerca-de.html" class="nav-links">Acerca de</a>
                     </li>
                     <li class="nav-items">
-                        <a href="#" class="nav-links">Contacto</a>
+                        <a href="./contacto.html" class="nav-links">Contacto</a>
                     </li>
                     <li class="nav-items">
-                        <a href="#" class="nav-links">Galeria</a>
+                        <a href="./galeria.html" class="nav-links">Galeria</a>
                     </li>
                     <li class="nav-items">
                         <img src="./imagenes/close.svg" class="nav-close">
@@ -98,12 +181,12 @@
 
         <section class="footer-copy container">
             <div class="footer-social">
-                <a href="#" class="footer-icons"><img src="./imagenes/facebook.svg" class="footer-img" alt=""></a>
-                <a href="#" class="footer-icons"><img src="./imagenes/twitter.svg" class="footer-img" alt=""></a>
-                <a href="#" class="footer-icons"><img src="./imagenes/instagram.svg" class="footer-img" alt=""></a>
+                <a href="#" class="footer-icons"><img src="../imagenes/facebook.svg" class="footer-img" alt=""></a>
+                <a href="#" class="footer-icons"><img src="../imagenes/twitter.svg" class="footer-img" alt=""></a>
+                <a href="#" class="footer-icons"><img src="../imagenes/instagram.svg" class="footer-img" alt=""></a>
             </div>
 
-            <h3 class="footer-copyright">Derechos reservados &copy; Benjamin Zamudio</h3>
+            <h3 class="footer-copyright">Copyright &copy; Benjamin Zamudio</h3>
         </section>
     </footer>
     <script src="./js/menu.js"></script>
